@@ -10,10 +10,11 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+/* video class */
 video{
     margin-top: 60px;
     width: 100vw;
-    height: 600px; 
+    height: 500px; 
     display: block;
     object-fit: cover; 
     
@@ -24,7 +25,7 @@ video{
     display: block;
     object-fit: cover;
     pointer-events: none; 
-    filter: sepia(80%);
+    filter: sepia(100%) grayscale(100%);
 }
 .line {
     position: absolute;
@@ -34,9 +35,67 @@ video{
     height: 5px; 
     background-color: rgb(196, 196, 196); 
 }
-.video-h2{
-    z-index: 999;
+.video-title {
+    position: absolute; 
+    top: 20%; 
+    left: 20%;
+    z-index: 999; 
+    color: #7C4E24; 
+    text-align: left;
+    padding: 10px; 
+    border-radius: 5px; 
+    font-weight: bold;
+    
 }
+.video-p{
+    position: absolute; 
+    top: 50%; 
+    left: 60%;
+    z-index: 999; 
+    color: #6c4929; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+.video-div{
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    background-color: #F7EADA; 
+    top: 70%; 
+    left: 10%;
+    z-index: 999; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-weight: bold;
+    gap: 20px;
+}
+.yaprak-icon{
+    margin-top: 3%;
+    margin-left: 4%;
+    font-size: 25px;
+    color: #A88766;
+}
+.dogal{
+    width: 200px;
+    height: 80px;
+    gap: 5px;
+}
+.tik-icon{
+    font-size: 25px;
+    color: #A88766;
+    margin-top: 3%;
+}
+.dogal h2 {
+    color: #62381B;
+}
+.dogal p{
+    color: #62381B;
+    
+}
+/* video class  bitiş */
 .image-back {
     width: 100%;
     max-width: 100%;
