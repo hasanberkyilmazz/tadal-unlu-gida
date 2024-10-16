@@ -1,0 +1,515 @@
+body{
+    background-color: #F7EADA;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+}
+
+.image-back {
+    width: 100vw;
+    height: 400px;
+    display: block;
+    filter: blur(2px);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-image: url(../foto/tadal.webp);
+    background-position: center center;
+    background-size: cover;
+}
+
+.golge {
+    position: absolute;
+    width: 100%; /* Gölgenin genişliğini ayarlayın */
+    max-width: 100%;
+    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: bold;
+  
+    position: relative;
+    z-index: 2; /* Metin üstte kalsın diye */
+}
+
+.deneme {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    max-width: 400px;
+    margin-top: 20px;
+    position: absolute;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.text_2{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-family: "gilroy", sans-serif;
+}
+
+
+.span {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #fff;
+}
+
+/* Responsive düzeltmeler */
+@media (max-width: 500px) {
+    .deneme {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.h1{
+    color: #62381B;
+    font-family: Ubuntu,sans-serif;
+}
+
+.p2{
+    color: #010101;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Ubuntu,sans-serif;
+}
+
+.container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box {
+    padding-top: 30px;
+    width: 32%;
+    height: 300px;
+    background-color: #F7EADA;
+    margin-left: 0px;
+    margin-top: 50px;
+    color: #EF1817;
+    margin-top: 250px;
+}
+
+.box1 {
+    width: 40%;
+    height: auto;
+    background-color: #FFF7EA;
+    margin-left: 0px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.box_1_ic{
+    width: 60%;
+    height: 500px;
+    background-color:  #FFF7EA; 
+    margin: 20px;
+    align-items: center;
+}
+@media (max-width: 869px) {
+    .box, .box1 {
+        width: 90%; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .box1 {
+        order: 2;
+    }
+    .box {
+        order: 1;
+    }
+}
+
+.input_text{
+    width: 140%;
+    height: 30px;
+    border-radius:5px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.input_email{
+    width: 140%;
+    height: 30px;
+    border-radius:5px;
+    font-size: 16px;
+    align-items: center;
+}
+.input_number{
+    width: 140%;
+    height: 30px;
+    border-radius:5px;
+    font-size: 16px;
+    align-items: center;
+}
+.text_area{
+    width: 140%;
+    height: 90px;
+    border-radius:5px;
+    font-size: 16px;
+    align-items: center;
+}
+.button{
+    background-color: #EF1817;
+    width: 140%;
+    height: 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.additional-info {
+    font-family: Gilroy , sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 100px auto;
+    height:auto;
+}
+.en_alt_h2{
+    font-size: 14px;
+}
+
+.i {
+    color: red;
+    display: block;
+    align-items: left;
+}
+.iframe-maps{
+    float: right; /* Maps'i sağa yaslamak için */
+    width: 40%; /* Geniş ekranlarda belli bir genişlikte */
+}
+
+.deneme1 {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.title1 {
+    font-weight: bold;
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+}
+@media (max-width: 869px) {
+    .deneme1 {
+        flex-direction: column; 
+        }
+    .iframe-maps {
+        width: 350px; 
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+}
+.contact-title{
+    color: #62381B;
+}
+.contact-link {
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .box {
+        order: 1;   
+    }
+    .box1 {
+        order: 2;
+    }
+}
+
+
+.en_ust{
+    color: #fff;
+    text-decoration: none;
+}
+.en_ust_div {
+    background-color: #FFF7EA;
+    width: 100%; /* Ekran genişliğine yayılması için %100 genişlik */
+    height: 60px; /* Sabit yükseklik */
+    margin: 0; /* Yatayda ortalamak için margin ayarı kaldırıldı */
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    position: fixed; /* Sabit konumda kalmasını sağla */
+    top: 0; /* Üstte konumlandır */
+    left: 0; /* Soldan konumlandır */
+    z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için z-index ayarla */
+}
+.input-container {
+    text-align: right; 
+}
+.search-input {
+    width: 200px;
+    height: 35px;
+    margin-right: 200px;
+    border: 2px solid #000; 
+    border-radius: 5px;
+    color: #000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 30px;
+    padding: 20px 0;
+    border-radius: 25px;
+    margin-left: 200px;
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+.menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px;
+    color: #000;
+}
+.menu ul li a:hover {
+    background-color: #62381B;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+.img_ust {
+    display: flex;
+    justify-content: flex-start; /* İçeriği sola hizala */
+    margin-right: 50px; /* Sağ boşluk */
+}
+
+
+.konum-icon{
+    margin-left: 0px;
+    
+}
+
+/*footer baslangıc*/
+.footer-tadal {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF7EA;
+}
+.footer-section {
+    color: #9c6363;
+}
+.adres_icon {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    top: 25px; 
+}
+.footer_h2{
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.telefon_icon {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    top: 25px;  
+}
+.email-icon {
+    margin-right: 15px;
+    align-items: center;
+    position: relative;
+    top: 25px; 
+}
+.div-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+}
+.img-tadal {
+    margin-top: 100px;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+}
+.vertical-menu {
+    margin-top: 60px;
+    flex-direction: column; 
+    align-items: flex-start;
+    color: #5C3820;
+}
+.vertical-menu ul {
+    flex-direction: column; 
+}
+.vertical-menu ul li {
+    display: block; 
+    padding: 10px ; 
+}
+.vertical-menu ul li a {
+    text-decoration: none;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.copy-div {
+    width: 550px;
+    height: 30px;
+    margin-top: 80px;
+    margin-left: 90px;
+    float: left;
+}
+.sos-div {
+    float: right;
+    width: auto;
+    height: auto;
+    margin-top: 80px;
+    margin-right: 80px;
+    height: auto;
+}
+.fa-facebook {
+    font-size: 30px;
+    margin-bottom: 80px;
+    color: #62381B;
+}
+.fa-instagram {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 80px;
+    color: #62381B;
+}
+
+.en_ust {
+    color: #fff;
+    text-decoration: none;
+}
+.adres_icon {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    top: 25px; 
+    
+}
+.telefon_icon {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    top: 25px;  
+}
+.email-icon {
+    margin-right: 15px;
+    align-items: center;
+    position: relative;
+    top: 25px; 
+}
+.en_ust_div { 
+    background-color: #FFF7EA;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6000; 
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 30px;
+    padding: 20px 0;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+.menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px;
+    color: #000;
+}
+.menu ul li a:hover {
+    padding: 5px;
+    border-radius: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+.footer_h2{
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.vertical-menu ul li a {
+    text-decoration: none;
+    color: #62381B;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.hr{
+    margin-top: 2px;
+}
+/*footer bitiş*/
+

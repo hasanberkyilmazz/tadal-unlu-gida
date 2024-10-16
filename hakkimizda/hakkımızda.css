@@ -1,0 +1,373 @@
+body {
+    background-color: #F7EADA;
+    margin: 0; /* Default margin'ı kaldır */
+    overflow-x: hidden; /* Yatay kaydırmayı önle */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; /* Konteyneri ortala */
+  
+}
+
+.overlay {
+    margin-bottom: 50px;
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-image: url(../foto/tadal.webp);
+    background-position: center center;
+    background-size: cover;
+}
+
+.golge {
+    position: absolute;
+    width: 100%; /* Gölgenin genişliğini ayarlayın */
+    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: bold;
+  
+    position: relative;
+    z-index: 2; /* Metin üstte kalsın diye */
+}
+.deneme {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    max-width: 400px;
+    margin-top: 20px;
+    position: absolute;
+    margin-top: 100px;
+    color: #fff;
+}
+
+
+.golge {
+    position: absolute;
+    width: 100%; /* Gölgenin genişliğini ayarlayın */
+    max-width: 100%;
+    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.parent-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    padding-left: 100px;
+    justify-content: center;
+}
+
+/* Existing styles for img-div-5 */
+.img-div-5 {
+    margin-left: 50px;           /* Keep the original left margin */
+    border-radius: 180px 0px 0px 0px;
+    width: 400px;                /* Fixed width */
+    height: 400px;               /* Fixed height */
+    object-fit: cover;
+    margin-right: 100px;
+    object-position: center center;
+    filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+}
+.img_div{
+    margin-right: 200px;
+    border-radius: 180px 0px 0px 0px;
+}
+/* Existing styles for hakkimizda-aciklama */
+.hakkimizda-aciklama {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    width: 50%;
+    height: auto;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) { /* Adjust the width as needed */
+    .img-div-5 {
+        padding-left: 0; /* Remove padding */
+        /* max-width: 100%; Use max-width for proportional scaling */
+        height: auto;    /* Maintain aspect ratio */
+        border-radius: 180px 0px 0px 0px; /* Keep the same border-radius */
+    }
+    
+    .hakkimizda-aciklama {
+        width: 100%; /* Make description div full width */
+    }
+}
+
+
+.hakkımızda-div-ici{
+    color: red;
+}
+@media (max-width: 997px){
+    .hakkımızda-aciklama {
+        flex-direction:column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
+.hakkımızda-p{
+    /* width: 300px; */
+    height: 350px;
+    display: block; /* Görüntüyü block element yapar */
+    height: auto; /* Yükseklik otomatik */
+}
+
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.vertical-menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertical-menu ul {
+    list-style: none;
+}
+.vertical-menu ul li {
+    padding: 5px 0;
+}
+.vertical-menu ul li a {
+    text-decoration: none;
+    /* Alt çizgiyi kaldır */
+    color: #62381B;
+    /* Link rengi */
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Yazı fontu */
+    font-size: 20px;
+    /* Font boyutu */
+   
+}
+
+.en_ust_div{
+    width: 100%;
+    height: 55px;
+    margin-right: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+@media (max-width: 780px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+.footer {
+    padding: 10px 0; /* Üstten ve alttan 10px boşluk, sağdan ve soldan 0px */
+    height: auto; 
+    display: flex;
+    justify-content: space-around; /* Bölümleri eşit dağıt */
+    background-color: #FFF7EA; /* Arka plan rengi */
+}
+
+
+@media (max-width: 780px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+
+.footer-section {
+
+    /* padding: 10px; */
+    color: #62381B;
+}
+.img-tadal{
+    width: 120px;
+    height: 120px;
+    display: block;    
+    margin-top: 70%; /* Yatay ortalama */
+    height: 120px;
+    
+}
+.div-img-container { 
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+     height: auto; 
+     
+    background-color: aqua;
+}
+    
+
+.footer-tadal{
+    width: 100%;
+    height: auto;
+}
+
+.copy-div {
+    width: 550px;
+    height: 30px;
+    margin-top: 80px;
+    margin-left: 90px;
+    float: left; /* Sol divi sola hizala */
+}
+
+.sos-div {
+    float: right; /* Sağ divi sağa hizala */
+    width: auto;
+    height: auto;
+    margin-top: 80px;
+    margin-right: 80px;
+}
+.fa-facebook{
+    font-size: 30px;
+    margin-bottom: 80px;
+    color: #62381B;
+}
+.fa-instagram{
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 80px;
+    color: #62381B;
+}
+
+.en_ust{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.adres_icon {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    top: 25px; /* Moves the icon down by 15px */
+    
+}
+
+.telefon_icon {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    top: 25px; /* Moves the icon down by 15px */
+    
+}
+.email-icon {
+    margin-right: 15px;
+    align-items: center;
+    position: relative;
+    top: 25px; /* Moves the icon down by 15px */
+    
+}
+.footer_h2{
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 20px;
+    
+}
+
+.img-div-6{
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+    filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+    border-radius: 180px 180px 0px 0px;
+}
+.h2_hikayemiz{
+    margin-top: 0px;
+    font-size: 40px;
+    text-align: start;
+}
+.en_ust_div {
+    background-color: #FFF7EA;
+    width: 100%; /* Ekran genişliğine yayılması için %100 genişlik */
+    height: 60px; /* Sabit yükseklik */
+    margin: 0; /* Yatayda ortalamak için margin ayarı kaldırıldı */
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    position: fixed; /* Sabit konumda kalmasını sağla */
+    top: 0; /* Üstte konumlandır */
+    left: 0; /* Soldan konumlandır */
+    z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için z-index ayarla */
+}
+
+.input-container {
+    text-align: right; 
+}
+.search-input {
+    width: 200px;
+    height: 35px;
+    margin-right: 200px;
+    border: 2px solid #000; 
+    border-radius: 5px;
+    color: #000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 30px;
+    padding: 20px 0;
+    border-radius: 25px;
+    margin-left: 200px;
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+.menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px;
+    color: #000;
+}
+.menu ul li a:hover {
+    background-color: #62381B;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+.img_ust {
+    display: flex;
+    justify-content: flex-start; /* İçeriği sola hizala */
+    margin-right: 50px; /* Sağ boşluk */
+}
+.footer_yazi{
+    margin-left: 25px;
+    margin-top: 0px;
+}
+@media  (max-width780px) {
+    .img-div-6{
+        flex-direction:column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
