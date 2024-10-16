@@ -1,14 +1,12 @@
 body {
     background-color: #F7EADA;
-    margin: 0; /* Default margin'ı kaldır */
-    overflow-x: hidden; /* Yatay kaydırmayı önle */
+    margin: 0; 
+    overflow-x: hidden; 
 }
-
 .container {
     position: relative;
     width: 100%;
-    margin: 0 auto; /* Konteyneri ortala */
-  
+    margin: 0 auto; 
 }
 
 .overlay {
@@ -26,21 +24,18 @@ body {
     background-position: center center;
     background-size: cover;
 }
-
 .golge {
     position: absolute;
-    width: 100%; /* Gölgenin genişliğini ayarlayın */
-    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    width: 100%; 
+    height: 100%; 
     background-color: rgba(0, 0, 0, 0.4); 
 }
-
 .overlay-text {
     color: #fff;
     font-size: clamp(24px, 5vw, 48px);
     font-weight: bold;
-  
     position: relative;
-    z-index: 2; /* Metin üstte kalsın diye */
+    z-index: 2; 
 }
 .deneme {
     display: flex;
@@ -52,28 +47,24 @@ body {
     margin-top: 100px;
     color: #fff;
 }
-
-
 .golge {
     position: absolute;
-    width: 100%; /* Gölgenin genişliğini ayarlayın */
+    width: 100%; 
     max-width: 100%;
-    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    height: 100%; 
     background-color: rgba(0, 0, 0, 0.5);
 }
 .parent-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    flex-wrap: wrap; 
     padding-left: 100px;
     justify-content: center;
 }
-
-/* Existing styles for img-div-5 */
 .img-div-5 {
-    margin-left: 50px;           /* Keep the original left margin */
+    margin-left: 50px;
     border-radius: 180px 0px 0px 0px;
-    width: 400px;                /* Fixed width */
-    height: 400px;               /* Fixed height */
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     margin-right: 100px;
     object-position: center center;
@@ -83,7 +74,6 @@ body {
     margin-right: 200px;
     border-radius: 180px 0px 0px 0px;
 }
-/* Existing styles for hakkimizda-aciklama */
 .hakkimizda-aciklama {
     display: flex;
     flex-direction: column;
@@ -91,22 +81,17 @@ body {
     width: 50%;
     height: auto;
 }
-
-/* Responsive behavior */
-@media (max-width: 768px) { /* Adjust the width as needed */
+@media (max-width: 768px) { 
     .img-div-5 {
-        padding-left: 0; /* Remove padding */
-        /* max-width: 100%; Use max-width for proportional scaling */
-        height: auto;    /* Maintain aspect ratio */
-        border-radius: 180px 0px 0px 0px; /* Keep the same border-radius */
+        padding-left: 0; 
+        height: auto;
+        border-radius: 180px 0px 0px 0px;
     }
     
     .hakkimizda-aciklama {
-        width: 100%; /* Make description div full width */
+        width: 100%;
     }
 }
-
-
 .hakkımızda-div-ici{
     color: red;
 }
@@ -118,10 +103,9 @@ body {
     }
 }
 .hakkımızda-p{
-    /* width: 300px; */
     height: 350px;
-    display: block; /* Görüntüyü block element yapar */
-    height: auto; /* Yükseklik otomatik */
+    display: block;
+    height: auto;
 }
 
 
@@ -144,15 +128,10 @@ body {
 }
 .vertical-menu ul li a {
     text-decoration: none;
-    /* Alt çizgiyi kaldır */
     color: #62381B;
-    /* Link rengi */
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    /* Yazı fontu */
-    font-size: 20px;
-    /* Font boyutu */
-   
+    font-size: 20px;  
 }
 
 .en_ust_div{
@@ -169,11 +148,11 @@ body {
     }
 }
 .footer {
-    padding: 10px 0; /* Üstten ve alttan 10px boşluk, sağdan ve soldan 0px */
+    padding: 10px 0; 
     height: auto; 
     display: flex;
-    justify-content: space-around; /* Bölümleri eşit dağıt */
-    background-color: #FFF7EA; /* Arka plan rengi */
+    justify-content: space-around; 
+    background-color: #FFF7EA;
 }
 
 
@@ -185,15 +164,13 @@ body {
 
 
 .footer-section {
-
-    /* padding: 10px; */
     color: #62381B;
 }
 .img-tadal{
     width: 120px;
     height: 120px;
     display: block;    
-    margin-top: 70%; /* Yatay ortalama */
+    margin-top: 70%; 
     height: 120px;
     
 }
@@ -217,11 +194,11 @@ body {
     height: 30px;
     margin-top: 80px;
     margin-left: 90px;
-    float: left; /* Sol divi sola hizala */
+    float: left; 
 }
 
 .sos-div {
-    float: right; /* Sağ divi sağa hizala */
+    float: right;
     width: auto;
     height: auto;
     margin-top: 80px;
@@ -254,7 +231,7 @@ body {
     margin-right: 15px;
     position: relative;
     align-items: center;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px; 
     
 }
 
@@ -262,14 +239,14 @@ body {
     margin-right: 15px;
     position: relative;
     align-items: center;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px; 
     
 }
 .email-icon {
     margin-right: 15px;
     align-items: center;
     position: relative;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px;
     
 }
 .footer_h2{
@@ -295,16 +272,16 @@ body {
 }
 .en_ust_div {
     background-color: #FFF7EA;
-    width: 100%; /* Ekran genişliğine yayılması için %100 genişlik */
-    height: 60px; /* Sabit yükseklik */
-    margin: 0; /* Yatayda ortalamak için margin ayarı kaldırıldı */
+    width: 100%; 
+    height: 60px; 
+    margin: 0; 
     display: flex;
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
-    position: fixed; /* Sabit konumda kalmasını sağla */
-    top: 0; /* Üstte konumlandır */
-    left: 0; /* Soldan konumlandır */
-    z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için z-index ayarla */
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
 }
 
 .input-container {
@@ -357,8 +334,8 @@ body {
 }
 .img_ust {
     display: flex;
-    justify-content: flex-start; /* İçeriği sola hizala */
-    margin-right: 50px; /* Sağ boşluk */
+    justify-content: flex-start; 
+    margin-right: 50px; 
 }
 .footer_yazi{
     margin-left: 25px;
@@ -370,4 +347,7 @@ body {
         align-items: center;
         text-align: center;
     }
+}
+.hr{
+    margin-top: 0px;
 }

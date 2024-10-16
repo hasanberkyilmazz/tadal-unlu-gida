@@ -1,6 +1,6 @@
 body {
-    margin: 0; /* Default margin'ı kaldır */
-    overflow-x: hidden; /* Yatay kaydırmayı önle */
+    margin: 0; 
+    overflow-x: hidden;
     background-color: #F7EADA;
     
 
@@ -9,14 +9,10 @@ body {
     position: relative;
     width: 100%;
     max-width: 100%;
-    /* max-width: 980px; */
-    margin: 0 auto; /* Konteyneri ortala */
+    margin: 0 auto; 
 }
 .image-back {
     width: 100%;
-    /* %100 genişlik */
-    /* height: auto; Yükseklik otomatik olarak ayarlanacak */
-    /* max-height: 400px; Max yükseklik belirle */
     display: block;
     filter: blur(2px);
     background-size: cover;
@@ -41,9 +37,9 @@ body {
 }
 .golge {
     position: absolute;
-    width: 100%; /* Gölgenin genişliğini ayarlayın */
+    width: 100%;
     max-width: 100%;
-    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .overlay-text {
@@ -51,7 +47,7 @@ body {
     font-size: clamp(24px, 5vw, 48px);
     font-weight: bold;
     position: relative;
-    z-index: 2; /* Metin üstte kalsın diye */
+    z-index: 2; 
 }
 .deneme {
     display: flex;
@@ -138,45 +134,43 @@ body {
 .menu {
     width: 750px;
     background-color: #FFF7EA;
-    margin: 50px auto; /* Ortala */
+    margin: 50px auto;
     border-radius: 25px;
     padding: 40px;   
-    transition: background-color 0.3s, color 0.3s; /* Geçiş efekti ekle */
-    text-align: center; /* Menüdeki linkleri yatayda ortala */
+    transition: background-color 0.3s, color 0.3s; 
+    text-align: center; 
 }
 .menu:hover {
-    color: #fff; /* Hover durumu için metin rengi */
+    color: #fff; 
 }
 .menu a {
-    color: #B24A2D; /* Normal durum */
+    color: #B24A2D; 
     text-decoration: none;
 }
 .menu a:hover {
-    color: #fff; /* Hover durumu için metin rengi */
+    color: #fff; 
     
 }
 ul {
-    list-style-type: none; /* Noktaları kaldır */
-    padding: 0; /* İç boşluğu kaldır */
-    margin: 0; /* Dış boşluğu kaldır */
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
 }
 ul li {
-    display: inline-block; /* Yatay olarak sıralamak için */
-    margin-left: 30px; /* Menü öğeleri arasındaki boşluk */
+    display: inline-block;
+    margin-left: 30px;
     padding: 5px;
 }
 ul li:hover {
-    color: #FFF7EA; /* Hover yazı rengi */
-    background-color: #62381B; /* Hover arka plan rengi */
+    color: #FFF7EA; 
+    background-color: #62381B; 
     border-radius: 15px;
 }
 .vertical-menu ul li a {
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    color: #62381B; /* Link rengi */
-    font-family: Arial, Helvetica, sans-serif; /* Yazı fontu */
-    font-size: 20px; /* Font boyutu */
-    /* padding: 10px;  */
-    
+    text-decoration: none; 
+    color: #62381B; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px;  
 }
 @media (max-width: 780px) {
     .menu {
@@ -192,8 +186,8 @@ ul li:hover {
 .footer {
     height: auto;
     display: flex;
-    justify-content: space-around; /* Bölümleri eşit dağıt */
-    background-color: #FFF7EA; /* Arka plan rengi */   
+    justify-content: space-around; 
+    background-color: #FFF7EA;   
 }
 @media (max-width: 780px) {
     .footer {
@@ -201,16 +195,14 @@ ul li:hover {
     }
 }
 .footer-section {
-
-    /* padding: 10px; */
     color: #62381B;
 }
 .icon-size {
-    font-size: 24px; /* İkon boyutunu ayarla */
-    width: 24px;     /* Genişlik ayarı */
-    height: 24px;    /* Yükseklik ayarı */
-    display: inline-block; /* Genişlik ve yükseklik için inline-block yap */
-    text-align: center; /* İkonu ortala */
+    font-size: 24px; 
+    width: 24px; 
+    height: 24px;
+    display: inline-block; 
+    text-align: center; 
 }
 .img-tadal{
     width: 120px;
@@ -218,18 +210,17 @@ ul li:hover {
     align-items: center;
 }
 .div-img-container {
-    display: flex; /* Flexbox kullanarak divleri yan yana getir */
-    justify-content: space-between; /* Boşluğu eşit dağıtmak için */
-    align-items: center; /* Yükseklik boyunca ortala */
-    width: 100%; /* Konteyner genişliği */
-    height: auto; /* Yükseklik otomatik */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    height: auto; 
     background-color: aqua;
 }
 .div-img {
     align-items: center;
-    /* padding-top: 100px; */
     padding-left: 300;
-    width: 400px; /* Her divin genişliği */
+    width: 400px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -240,33 +231,30 @@ ul li:hover {
     height: auto;
 }
 .vertical-menu {
-    width: 200px; /* Dikey menü genişliği */
-    /* background-color: #FFF7EA;  Arka plan rengini kaldır */
-    margin: 20px auto; /* Ortala ve yukarıdan aşağı boşluk ekle */
-    border-radius: 10px; /* Köşeleri yuvarlat */
+    width: 200px; 
+    margin: 20px auto; 
+    border-radius: 10px; 
     color: #FFF;
 }
 .vertical-menu ul li {
-    /* padding: 10px; */
-    margin: 5px 0; /* Elemanlar arası boşluk */
-    /* background-color: #62381B;  Buton arka plan rengini kaldır */
-    color: #FFF7EA; /* Buton yazı rengi */
-    border-radius: 5px; /* Buton köşeleri yuvarlat */
-    text-align: center; /* Metni ortala */
+    margin: 5px 0; 
+    color: #FFF7EA;
+    border-radius: 5px; 
+    text-align: center; 
 }
 .vertical-menu ul li:hover {
-    background-color: transparent; /* Hover sırasında arka plan rengini kaldır */
-    color: #FFF; /* Hover'da sadece yazı rengini değiştir */ 
+    background-color: transparent; 
+    color: #FFF;
 } 
 .copy-div {
     width: 550px;
     height: 30px;
     margin-top: 80px;
     margin-left: 90px;
-    float: left; /* Sol divi sola hizala */
+    float: left; 
 }
 .sos-div {
-    float: right; /* Sağ divi sağa hizala */
+    float: right; 
     width: auto;
     height: auto;
     margin-top: 80px;
@@ -295,7 +283,7 @@ ul li:hover {
     margin-right: 15px;
     position: relative;
     align-items: center;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px;
     
 }
 
@@ -303,14 +291,14 @@ ul li:hover {
     margin-right: 15px;
     position: relative;
     align-items: center;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px; 
     
 }
 .email-icon {
     margin-right: 15px;
     align-items: center;
     position: relative;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px; 
     
 }
 .footer_h2{
@@ -321,16 +309,16 @@ ul li:hover {
 }
 .en_ust_div {
     background-color: #FFF7EA;
-    width: 100%; /* Ekran genişliğine yayılması için %100 genişlik */
-    height: 60px; /* Sabit yükseklik */
-    margin: 0; /* Yatayda ortalamak için margin ayarı kaldırıldı */
+    width: 100%; 
+    height: 60px;
+    margin: 0; 
     display: flex;
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
-    position: fixed; /* Sabit konumda kalmasını sağla */
-    top: 0; /* Üstte konumlandır */
-    left: 0; /* Soldan konumlandır */
-    z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için z-index ayarla */
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 .input-container {
     text-align: right; 
@@ -382,6 +370,9 @@ ul li:hover {
 }
 .img_ust {
     display: flex;
-    justify-content: flex-start; /* İçeriği sola hizala */
-    margin-right: 50px; /* Sağ boşluk */
+    justify-content: flex-start; 
+    margin-right: 50px;
+}
+.hr{
+    margin-top: 0px;
 }

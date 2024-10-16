@@ -1,11 +1,8 @@
 body {
     background-color: #F7EADA;
     margin: 0;
-    /* Default margin'ı kaldır */
     overflow-x: hidden;
-    /* Yatay kaydırmayı önle */
 }
-
 .container {
     position: relative;
     width: 100%;
@@ -14,12 +11,9 @@ body {
 }
 .image-back {
     width: 100%;
-    /* %100 genişlik */
     max-width: 100%;
     height: auto;
-    /* Yükseklik otomatik olarak ayarlanacak */
     max-height: 400px;
-    /* Max yükseklik belirle */
     display: block;
     filter: blur(2px);
     background-position: center;
@@ -43,10 +37,8 @@ body {
 .golge {
     position: absolute;
     width: 100%;
-    /* Gölgenin genişliğini ayarlayın */
     max-width: 100%;
     height: 100%;
-    /* Gölgenin yüksekliğini ayarlayın */
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -56,7 +48,6 @@ body {
     font-weight: bold;
     position: relative;
     z-index: 2;
-    /* Metin üstte kalsın diye */
 }
 .deneme {
     display: flex;
@@ -81,15 +72,10 @@ body {
 
 .vertical-menu ul li a {
     text-decoration: none;
-    /* Alt çizgiyi kaldır */
     color: #62381B;
-    /* Link rengi */
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    /* Yazı fontu */
-    font-size: 20px;
-    /* Font boyutu */
-   
+    font-size: 20px; 
 }
 @media (max-width: 780px) {
     .menu {
@@ -100,11 +86,7 @@ body {
     height: auto;
     display: flex;
     justify-content: space-around;
-    /* Bölümleri eşit dağıt */
     background-color: #FFF7EA;
-    /* Arka plan rengi */
-    /* padding: 20px; */
-
 }
 @media (max-width: 780px) {
     .footer {
@@ -121,23 +103,16 @@ body {
 }
 .div-img-container {
     display: flex;
-    /* Flexbox kullanarak divleri yan yana getir */
     justify-content: space-between;
-    /* Boşluğu eşit dağıtmak için */
     align-items: center;
-    /* Yükseklik boyunca ortala */
     width: 100%;
-    /* Konteyner genişliği */
     height: auto;
-    /* Yükseklik otomatik */
     background-color: aqua;
 }
 .div-img {
     align-items: center;
-    /* padding-top: 100px; */
     padding-left: 300;
     width: 400px;
-    /* Her divin genişliği */
     margin: auto;
     display: flex;
     justify-content: center;
@@ -162,15 +137,10 @@ body {
 }
 .vertical-menu ul li a {
     text-decoration: none;
-    /* Alt çizgiyi kaldır */
     color: #62381B;
-    /* Link rengi */
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    /* Yazı fontu */
     font-size: 20px;
-    /* Font boyutu */
-   
 }
 .copy-div {
     width: 550px;
@@ -182,7 +152,6 @@ body {
 /* sosyal medya bölümü */
 .sos-div {
     float: right;
-    /* Sağ divi sağa hizala */
     width: auto;
     height: auto;
     margin-top: 80px;
@@ -242,13 +211,9 @@ body {
 
     .galeri4,.galeri5,.galeri6 {
         width: 100%;
-        /* Küçük ekranlarda tam genişlik alır */
         height: auto;
-        /* Yüksekliği içeriğe göre ayarla */
         flex-direction: column;
-        /* Dikey hizalama */
         margin-bottom: 20px;
-        /* Aralarına boşluk bırak */
     }
 }
 .galeri8 {
@@ -278,49 +243,37 @@ body {
     margin-right: 15px;
     position: relative;
     align-items: center;
-    top: 25px; /* Moves the icon down by 15px */
-    
+    top: 25px; 
 }
-
 .telefon_icon {
     margin-right: 15px;
     position: relative;
     align-items: center;
-    top: 25px; /* Moves the icon down by 15px */
+    top: 25px;
     
 }
 .email-icon {
     margin-right: 15px;
     align-items: center;
     position: relative;
-    top: 25px; /* Moves the icon down by 15px */
-    
+    top: 25px; 
 }
 .footer_h2{
     align-items: center;
     margin-top: 0px;
     margin-left: 20px;
-    
 }
 .en_ust_div {
     background-color: #FFF7EA;
     width: 100%;
-    /* Ekran genişliğine yayılması için %100 genişlik */
     height: 60px;
-    /* Sabit yükseklik */
     margin: 0;
-    /* Yatayda ortalamak için margin ayarı kaldırıldı */
     display: flex;
     align-items: center;
-    /* Dikeyde ortalama */
     position: fixed;
-    /* Sabit konumda kalmasını sağla */
     top: 0;
-    /* Üstte konumlandır */
     left: 0;
-    /* Soldan konumlandır */
     z-index: 1000;
-    /* Diğer öğelerin üzerinde görünmesi için z-index ayarla */
 }
 .input-container {
     text-align: right; 
@@ -373,8 +326,8 @@ body {
 .img_ust {
     display: flex;
     justify-content: flex-start;
-    /* İçeriği sola hizala */
     margin-right: 50px;
-    /* Sağ boşluk */
 }
-
+.hr{
+    margin-top: 0px;
+}

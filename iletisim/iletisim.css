@@ -35,9 +35,9 @@ body{
 
 .golge {
     position: absolute;
-    width: 100%; /* Gölgenin genişliğini ayarlayın */
+    width: 100%; 
     max-width: 100%;
-    height: 100%; /* Gölgenin yüksekliğini ayarlayın */
+    height: 100%; 
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -45,9 +45,8 @@ body{
     color: #fff;
     font-size: clamp(24px, 5vw, 48px);
     font-weight: bold;
-  
     position: relative;
-    z-index: 2; /* Metin üstte kalsın diye */
+    z-index: 2; 
 }
 
 .deneme {
@@ -75,8 +74,6 @@ body{
     margin-right: 15px;
     color: #fff;
 }
-
-/* Responsive düzeltmeler */
 @media (max-width: 500px) {
     .deneme {
         flex-direction: column;
@@ -205,10 +202,9 @@ body{
     align-items: left;
 }
 .iframe-maps{
-    float: right; /* Maps'i sağa yaslamak için */
-    width: 40%; /* Geniş ekranlarda belli bir genişlikte */
+    float: right; 
+    width: 40%; 
 }
-
 .deneme1 {
     display: flex;
     gap: 30px;
@@ -256,16 +252,16 @@ body{
 }
 .en_ust_div {
     background-color: #FFF7EA;
-    width: 100%; /* Ekran genişliğine yayılması için %100 genişlik */
-    height: 60px; /* Sabit yükseklik */
-    margin: 0; /* Yatayda ortalamak için margin ayarı kaldırıldı */
+    width: 100%; 
+    height: 60px; 
+    margin: 0; 
     display: flex;
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
-    position: fixed; /* Sabit konumda kalmasını sağla */
-    top: 0; /* Üstte konumlandır */
-    left: 0; /* Soldan konumlandır */
-    z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için z-index ayarla */
+    justify-content: center; 
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 .input-container {
     text-align: right; 
@@ -317,8 +313,8 @@ body{
 }
 .img_ust {
     display: flex;
-    justify-content: flex-start; /* İçeriği sola hizala */
-    margin-right: 50px; /* Sağ boşluk */
+    justify-content: flex-start; 
+    margin-right: 50px; 
 }
 
 
@@ -509,7 +505,6 @@ body{
     font-size: 20px;
 }
 .hr{
-    margin-top: 2px;
+    margin-top: 0px;
 }
 /*footer bitiş*/
-
