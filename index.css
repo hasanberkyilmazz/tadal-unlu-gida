@@ -14,6 +14,7 @@ body {
 video{
     margin-top: 60px;
     width: 100vw;
+    min-width: 100%;
     height: 500px; 
     display: block;
     object-fit: cover; 
@@ -22,25 +23,32 @@ video{
 .full-width-video {
     width: 100vw;
     height: 600px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: block;
     object-fit: cover;
     pointer-events: none; 
-    filter: sepia(100%) grayscale(100%);
+    background-color:  #8f6b47;
 }
 .line {
+    width: 100%; /* Genişlik %100 olsun */
+    height: 500px; /* Sabit yükseklik */
+    object-fit: cover; /* İçeriği kapsamak için */
     position: absolute;
     top: 50%; 
     left: 0;
     right: 0;
     height: 5px; 
-    background-color: rgb(196, 196, 196); 
+     
+    
 }
 .video-title {
     position: absolute; 
     top: 20%; 
     left: 20%;
     z-index: 999; 
-    color: #7C4E24; 
+    color: #F7EBDC; 
     text-align: left;
     padding: 10px; 
     border-radius: 5px; 
@@ -49,44 +57,65 @@ video{
 }
 .video-p{
     position: absolute; 
-    top: 50%; 
-    left: 60%;
+    top: 35%; 
+    left: 50%;
     z-index: 999; 
-    color: #6c4929; 
+    color: #F7EBDC; 
     padding: 10px; 
     border-radius: 5px; 
     font-weight: bold;
 }
-.video-div{
+.video-div-container{
     display: flex;
-    width: 1200px;
-    height: 100px;
+    justify-content: center; 
+}
+.video-div {
+    display: flex;
+    width: 1000px;
+    
+    height: 120px;
     position: absolute;
     background-color: #F7EADA; 
-    top: 70%; 
-    left: 10%;
-    z-index: 999; 
+    top: 50%;
+    align-items: center;  
+    text-align: center; 
     color: white; 
-    padding: 10px; 
     border-radius: 5px; 
-    font-weight: bold;
     gap: 20px;
 }
+
+@media (max-width: 1019px) {
+    .video{
+        width: 100%;
+    }
+    .video-p{
+        display: none;
+    }
+    .video-title{
+        margin-left: 0%;
+        font-size: 40px;
+        margin-top: 20%;
+    }
+    .video-div {
+        display: none; /* Div'in görünümünü kaldır */
+    }
+}
+
 .yaprak-icon{
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 4%;
     font-size: 25px;
     color: #A88766;
 }
 .dogal{
     width: 200px;
-    height: 80px;
+    height: 100px;
     gap: 5px;
 }
 .tik-icon{
     font-size: 25px;
     color: #A88766;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .dogal h2 {
     color: #62381B;
@@ -145,12 +174,18 @@ video{
     justify-content: space-around;
     background-color: #FFF7EA;
 }
+@media (max-width: 1000px) {
+    .footer {
+        flex-direction: column;
+    }
+}
 .footer-section {
     color: #9c6363;
 }
 .img-tadal {
     width: 120px;
-    height: 120px;
+    object-fit: cover;
+    height: auto;
     align-items: center;
 }
 .div-img-container {
@@ -202,6 +237,14 @@ video{
     margin-right: 80px;
     height: auto;
 }
+@media (max-width:1000) {
+    .sos-div{
+        flex-direction: column;
+    }
+    .copy-div{
+        flex-direction: column;
+    }
+}
 .fa-facebook {
     font-size: 30px;
     margin-bottom: 80px;
@@ -215,12 +258,12 @@ video{
 }
 @media (max-width: 869px) {
     .footer-tadal {
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: center; 
         }
-    .vertical-menu   {
-        width: 350px; 
-        margin-left: 0;
-        margin-top: 20px; 
+    .vertical-menu {
+        flex-direction: column;
+        align-items:center ;
     }
 }
 .en_ust {
@@ -249,6 +292,7 @@ video{
 .en_ust_div { 
     background-color: #FFF7EA;
     width: 100%;
+    max-width: 100%;
     height: 60px;
     margin: 0;
     display: flex;
@@ -257,6 +301,16 @@ video{
     top: 0;
     left: 0;
     z-index: 6000; 
+}
+@media (max-width: 1000px) {
+    .en_ust_div {
+        display: none;
+    }
+    .line{
+     width: 100%; /* Genişlik %100 olsun */
+     height: 500px; /* Sabit yükseklik */
+     object-fit: cover; /* İçeriği kapsamak için */
+    }
 }
 .input-container {
     text-align: right; 
@@ -312,17 +366,16 @@ video{
     margin-left: 20px;
 }
 .urun_cesitleri {
-    margin-top: 10px;
     width: 100%;
-    height: 1200px;
+    min-height: 1200px; /* Change from height to min-height */
     color: #fff;
     background-image: url("https://tadalunlugida.com/wp-content/uploads/2024/04/home-products-bg.webp");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    align-items: center;
     position: relative;
 }
+
 
 .yazi_alanı {
     position: absolute; 
@@ -333,28 +386,23 @@ video{
 }
 
 .yazi_alanı h2 {
-    margin: 0; 
     font-size: 2em; 
     margin-bottom: 10px; 
 }
 
 .yazi_alanı p {
-    margin: 0;
     font-size: 1em; 
     margin-top: 10px; 
 }
-.container_block{
+.home-page-products-container {
+    gap: 40px; 
     display: flex;
-    
+    justify-content: space-between; 
 }
-.block {
-    padding-top: 20px; 
-    width: 275px;
-    height: 300px;
-    margin-top: 50px;
+
+.home-product-item {
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
     background-color: #F7EADA;
     color: #62381B;
     background-image: url('resminiz.jpg'); 
@@ -363,21 +411,46 @@ video{
     background-repeat: no-repeat;
     position: relative;
     left: 0; 
-    z-index: 1; 
+    z-index: 1;
 }
+
+/* 1000px altında alt alta gelecek şekilde ayarlama */
+@media (max-width: 1000px) {
+    .home-page-products-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .home-product-item {
+        width: 100%; 
+        max-width: 100%;
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+    .urun_cesitleri{
+        height: 2700px;
+    }
+}
+
+
+
+
+
 
  
 .img-container {
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    
 }
-.block h1{
+.home-product-item h1{
     font-size: 25px;
     margin-top: 10px; 
     color: #62381B;
     text-align: center;
 }
-.block p {
+.home-product-item p {
     font-size: 15px;
     margin-top: 10px;
     color: #62381B;
@@ -393,17 +466,22 @@ video{
 }
 
 .button1{
-    width: 150px;
-    height: 50px;
-    margin-top: 50px;
-    background-color: #0D0D0D;
+    padding: 12px 20px;
+    margin-top: 60px;
+    border: 2px solid #F7EBDC;
+    border-radius: 4px;
+    background-color: unset;
     color: #F7EBDC;
+    font-weight: 500;
+    transition: ease-in-out .3s;
+}
 
+.button1:hover{
+    cursor: pointer;
+    background-color: #F7EBDC;
+    color: #000;
 }
-.ana_foto{
-    display: flex;
-    justify-content: space-around;
-}
+
 .foto{
     width: 700px;
     height: 800px;
@@ -412,14 +490,12 @@ video{
 }
 .foto2{
     width: 800px;
-    height: 600px;
     margin-right: 150px;
-    margin-top: 200px;
     padding-left: 50px;
-    
 }
 .foto_img {
     margin-left: 100px;
+    width: 500px;
     margin-top: 50px;
     filter: brightness(50%);
     position: relative; 
@@ -429,27 +505,34 @@ video{
     position:absolute; 
     border-radius: 0 0 150px 150px; 
 }
-.resim_yazi_p{
+.resim_yazi_p {
     font-style: italic;
-    position:absolute;    
+    position: absolute;
+    text-align: center;    
     color: white;
     font-size: 30px;
-    margin-left: 90px;
-    margin-top: 335px;
+    margin-top: 350px;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
 
 
+
 .foto_ici1{
-    margin-left: 100px;
-    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
     filter: brightness(60%);
     border-radius: 150px 0px 0px 0px;
 }
 .foto_ici_yazi{
     width: 500px;
-    height: 206px;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
     color: #272727;
     text-align: center;
     align-items: center;
@@ -461,13 +544,74 @@ video{
 .foto_ici_btn {
     width: 150px;
     height: 30px;
-    margin-left: 50px;
-    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
     background-color: #F7EADA;
     border: 2px solid #62381B; 
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease; 
     font-size: 15px;
+    margin-bottom: 30px;
+}
+.ana_foto {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .ana_foto {
+        flex-direction: column; 
+        align-items: center; /* Öğeleri ortalamak için */
+        justify-content: flex-start; /* Üstten başlayarak dizilmesini sağlamak için */
+        margin-top: 0; /* Margin-top'u sıfırlayın */
+        gap: 50px;
+    }
+
+    .foto2 {
+        display: flex; /* Flexbox özelliği ekleyin */
+        flex-direction: column; 
+        margin-bottom: 20px; /* Aşağıya biraz boşluk ekleyin */
+        width: 400px;
+        height: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .foto2 img {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ana_foto {
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-top: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foto2 {
+        flex-direction: column; 
+        margin-bottom: 900px;
+        width:400px;
+        height:350px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .foto2 img {
+        width: 100%; 
+        align-items: center;
+        justify-content: center;
+        
+    }
 }
 
 .foto_ici_btn:hover {
@@ -476,7 +620,10 @@ video{
     border-color: #3E2814; 
 }
 .foto2 h1{
-    margin-left: 50px;
+    position: relative;
+    left: 50%;
+    margin-top: 150px;
+    transform: translateX(-50%);
     font-size:32px;
     font-family:  Gilroy , sans-serif; 
     color: #62381B;
@@ -490,18 +637,21 @@ video{
 }
 
 .orta_div {
+    
     position: relative;
     width: 100%; 
+    margin-top: 100px;
     height: 1000px;
     margin: 0 auto;
     
 }
-
+/* 
 .orta_div1 {
+   
     display: flex;
     width: 100%;
     height: 650px;
-}
+} */
 
 .orta_div_ici {
     width: 900px;
@@ -518,11 +668,14 @@ video{
     display: flex;
     align-items: center; 
 }
-.yazi{
 
-}
 @media (max-width: 986px) {
+    .orta_div{
+        margin-top: 200px;
+
+    }
     .orta_div_ici {
+        width: auto;
         margin-top: 50px;
         flex-direction: column; 
         }
@@ -550,14 +703,15 @@ video{
 .orta_div_ici h1 {
     font-size: 25px;
 }
-.orta_div_btn {
-    margin-top: 50px;
-    background-color: #1C1C1C;
+.orta_div_btn {            
+    padding: 12px 20px;
+    margin-top: 60px;
+    border: 2px solid #F7EBDC;
+    border-radius: 4px;
+    background-color: unset;
     color: #F7EBDC;
-    width: 150px;
-    height: 40px;
-    border: 2px solid #8A847D; 
-    box-sizing: border-box; 
+    font-weight: 500;
+    transition: ease-in-out .3s;
 }
 .orta_div_btn:hover{
     background-color: #f7eada70;
@@ -576,29 +730,57 @@ video{
     flex-direction: column; 
     align-items: center;
     margin-top: 50px;
+    
 }
-
+@media (max-width:1000px) {
+    .icerik{
+        flex-direction: column; 
+        align-items: center; 
+        
+    }
+    .icerik2{
+        width: 250px; 
+        margin: 0 auto; 
+        align-items: center; 
+        display: flex; 
+        justify-content: center; 
+        
+    }
+    
+}
 .icerik2 {
-    margin-right: 100px;
+    margin-right: 100px; 
+    display: grid;              
+    place-items: center; 
 }
 
 .icerik3 {
     width: 30%; 
     height: 1000px; 
 }
- @media (max-width: 1106px) {
-    .deneme{
-        height: auto; 
-        display: flex; 
+
+@media (max-width: 1106px) {
+    .deneme {
         flex-direction: column; 
+        align-items: center; 
+        
     }
-    .icerik2  {
+    
+    .icerik2 {
         width: 100%; 
         height: auto; 
+        margin-right: 0; 
         margin-bottom: 20px; 
-        flex-direction: column;
+        
     }
-} 
+
+    .icerik3 {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 350px;
+    }
+}
+
 
 .icerik1_icon{
     color: #62381B;
@@ -631,7 +813,6 @@ video{
 }
 .icerik1_icon1 {
     font-size: 50px;
-   
     color: #62381B;
     position: relative;
     z-index: 999;
@@ -690,4 +871,30 @@ video{
 }
 .hr{
     margin-top: 0px;
+}
+
+
+/* CUSTOM CSS WITH SADE */
+
+.home-product-item{
+    margin: 0;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.home-product-item img{
+    opacity: 0.6;
+    transition: ease-in-out .3s;
+}
+
+.home-product-item:hover{
+    cursor: pointer;
+}
+
+.home-product-item:hover img{
+    opacity: 1;
+}
+
+.home-page-products-container-2{
+    margin-top: 40px;
 }
