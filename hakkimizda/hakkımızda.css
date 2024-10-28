@@ -61,17 +61,13 @@ body {
     justify-content: center;
 }
 .img-div-5 {
-    margin-left: 50px;
+    
     border-radius: 180px 0px 0px 0px;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
     margin-right: 100px;
     object-position: center center;
     filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
 .img_div{
-    margin-right: 200px;
     border-radius: 180px 0px 0px 0px;
 }
 .hakkimizda-aciklama {
