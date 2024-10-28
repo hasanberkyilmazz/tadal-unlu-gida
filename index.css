@@ -72,11 +72,10 @@ video{
 .video-div {
     display: flex;
     width: 1000px;
-    
     height: 120px;
     position: absolute;
     background-color: #F7EADA; 
-    top: 50%;
+    top: 60%;
     align-items: center;  
     text-align: center; 
     color: white; 
@@ -562,7 +561,6 @@ video{
     align-items: center; 
     width: 100%;
 }
-
 @media (max-width: 1000px) {
     .ana_foto {
         flex-direction: column; 
@@ -571,7 +569,6 @@ video{
         margin-top: 0; /* Margin-top'u sıfırlayın */
         gap: 50px;
     }
-
     .foto2 {
         display: flex; /* Flexbox özelliği ekleyin */
         flex-direction: column; 
@@ -581,13 +578,11 @@ video{
         align-items: center;
         justify-content: center;
     }
-    
     .foto2 img {
         align-items: center;
         justify-content: center;
     }
 }
-
 @media (max-width: 1000px) {
     .ana_foto {
         flex-direction: column; 
@@ -596,7 +591,6 @@ video{
         align-items: center;
         justify-content: center;
     }
-
     .foto2 {
         flex-direction: column; 
         margin-bottom: 900px;
@@ -605,7 +599,6 @@ video{
         align-items: center;
         justify-content: center;
     }
-    
     .foto2 img {
         width: 100%; 
         align-items: center;
@@ -613,7 +606,6 @@ video{
         
     }
 }
-
 .foto_ici_btn:hover {
     background-color: #A88766; 
     color:  #F7EADA;
@@ -635,9 +627,7 @@ video{
     align-items: center;
     margin-right: 50px;
 }
-
 .orta_div {
-    
     position: relative;
     width: 100%; 
     margin-top: 100px;
@@ -645,14 +635,6 @@ video{
     margin: 0 auto;
     
 }
-/* 
-.orta_div1 {
-   
-    display: flex;
-    width: 100%;
-    height: 650px;
-} */
-
 .orta_div_ici {
     width: 900px;
     position: absolute;
@@ -668,7 +650,6 @@ video{
     display: flex;
     align-items: center; 
 }
-
 @media (max-width: 986px) {
     .orta_div{
         margin-top: 200px;
@@ -688,13 +669,11 @@ video{
 .orta_div_text {
     margin-right: 20px; 
 }
-
 .orta_div_image {
     width: 350px;
     height: 350px;
     margin-right: 15px;
 }
-
 .orta_div_ici p {
     color: #F7EBDC;
     font-style: italic;
@@ -715,11 +694,9 @@ video{
 }
 .orta_div_btn:hover{
     background-color: #f7eada70;
-} 
-
+}
 .icerik {
     width: 100%; 
-    
     background-color: #F7EADA; 
     display: flex; 
     justify-content: center; 
@@ -753,19 +730,16 @@ video{
     display: grid;              
     place-items: center; 
 }
-
 .icerik3 {
     width: 30%; 
     height: 1000px; 
 }
-
 @media (max-width: 1106px) {
     .deneme {
         flex-direction: column; 
         align-items: center; 
         
     }
-    
     .icerik2 {
         width: 100%; 
         height: auto; 
@@ -773,15 +747,12 @@ video{
         margin-bottom: 20px; 
         
     }
-
     .icerik3 {
         width: 100%; 
         height: auto; 
         margin-bottom: 350px;
     }
 }
-
-
 .icerik1_icon{
     color: #62381B;
     font-size: 50px;
@@ -872,132 +843,139 @@ video{
 .hr{
     margin-top: 0px;
 }
-
-
 /* CUSTOM CSS WITH SADE */
-
 .home-product-item{
     margin: 0;
     padding: 40px 20px;
     border-radius: 8px;
 }
-
 .home-product-item img{
     opacity: 0.6;
     transition: ease-in-out .3s;
 }
-
 .home-product-item:hover{
     cursor: pointer;
 }
-
 .home-product-item:hover img{
     opacity: 1;
 }
-
 .home-page-products-container-2{
     margin-top: 40px;
 }
-
-
 /* slider code start */
-.slider {
-    margin-top: 50px;
-    width: 100%;
+#slider {
+    margin: 0 auto;
+    width:100%;
     max-width: 100%;
-    height: 450px;
     text-align: center;
-    background-image:url(https://tadalunlugida.com/wp-content/uploads/2024/04/reviews-bg.png);
-}
-
-.slider input[type=radio] {
-    display: inline-block;
-    margin: 10px 0px;
-}
-
-.slider label {
-    cursor: pointer;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
     text-decoration: none;
-}
-
-.slides {    
-    height: 100px;
+    
+ }
+ #slides {
     padding: 10px;
-}
-
-.overflow {
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    
+ }
+ #overflow {
     width: 100%;
-}
-
-.slide1:checked ~ .slides .inner {
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
     margin-left: 0;
-}
-
-.slide2:checked ~ .slides .inner {
+ }
+ #slide2:checked ~ #slides .inner {
     margin-left: -100%;
-}
-
-.slides .inner {
+ }
+ #slides .inner {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    width: 200%;
-    line-height: 0;
+    width: 400%;
     height: 300px;
-}
-
-.slides .slide {
-    width: 50%;
-    float: left;
-    display: block;
-    height: 100%;
-    color: #000;
-}
-.slide-content {
-    height: 600px;
-    padding: 20px;
-}
-
-.slide-content h2 {
-    margin-bottom: 25px;
-}
-
-.slide-content p {    
-    margin-top: 0px;
-    font-size: 20px;
     line-height: 2;
-}
-
-.controls-and-radios {
-    margin-top: 20px;
-    text-align: center;    
-}
-
-.controls-and-radios .controls {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.controls label {
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 350px;
+ }
+ #slides .slide_1 {
+    color: #000;
+    background-image: url(https://tadalunlugida.com/wp-content/uploads/2024/04/reviews-bg.png    );
+ }
+ #slides .slide_2 {
+    color: #000;
+    background-image: url(https://tadalunlugida.com/wp-content/uploads/2024/04/reviews-bg.png    );
+ }
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
     width: 50px;
     height: 50px;
-    opacity: 0.6;
-    transition: opacity 0.2s ease-out;
-    background-size: contain;
-    display: inline-block;
-}
-
-.controls label:hover {
+    opacity: .4;
+ }
+ #controls label:hover {
     opacity: 1;
-}
-
-.radio-buttons-container {
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
     display: inline-block;
-    margin-left: 10px;
-}
-.radio-buttons-container {
-    margin-top: 10px; 
-    display: flex;
-    justify-content: center; 
-}
-
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
 
 /* slider code finish*/
