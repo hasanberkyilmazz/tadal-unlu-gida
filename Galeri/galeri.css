@@ -97,9 +97,10 @@ body {
     color: #9c6363;
 }
 .img-tadal {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: auto;
     align-items: center;
+    object-fit: cover;
 }
 .div-img-container {
     display: flex;

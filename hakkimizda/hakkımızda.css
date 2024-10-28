@@ -167,11 +167,11 @@ body {
     color: #62381B;
 }
 .img-tadal{
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: auto;
     display: block;    
     margin-top: 70%; 
-    height: 120px;
+    object-fit: cover;
     
 }
 .div-img-container { 
