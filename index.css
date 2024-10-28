@@ -3,7 +3,6 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-
 .container {
     position: relative;
     width: 100%;
@@ -40,8 +39,6 @@ video{
     left: 0;
     right: 0;
     height: 5px; 
-     
-    
 }
 .video-title {
     position: absolute; 
@@ -82,7 +79,6 @@ video{
     border-radius: 5px; 
     gap: 20px;
 }
-
 @media (max-width: 1019px) {
     .video{
         width: 100%;
@@ -99,7 +95,6 @@ video{
         display: none; /* Div'in görünümünü kaldır */
     }
 }
-
 .yaprak-icon{
     margin-top: 2%;
     margin-left: 4%;
@@ -322,7 +317,6 @@ video{
     border-radius: 5px;
     color: #000;
 }
-
 .menu {
     display: flex;
     justify-content: center;
@@ -374,8 +368,6 @@ video{
     background-repeat: no-repeat; 
     position: relative;
 }
-
-
 .yazi_alanı {
     position: absolute; 
     top: 50%; 
@@ -383,12 +375,10 @@ video{
     transform: translate(-50%, -50%); 
     text-align: center; 
 }
-
 .yazi_alanı h2 {
     font-size: 2em; 
     margin-bottom: 10px; 
 }
-
 .yazi_alanı p {
     font-size: 1em; 
     margin-top: 10px; 
@@ -398,7 +388,6 @@ video{
     display: flex;
     justify-content: space-between; 
 }
-
 .home-product-item {
     display: flex;
     flex-direction: column;
@@ -412,14 +401,13 @@ video{
     left: 0; 
     z-index: 1;
 }
-
 /* 1000px altında alt alta gelecek şekilde ayarlama */
 @media (max-width: 1000px) {
     .home-page-products-container {
         flex-direction: column; 
         align-items: center; 
     }
-    
+
     .home-product-item {
         width: 100%; 
         max-width: 100%;
@@ -430,13 +418,6 @@ video{
         height: 2700px;
     }
 }
-
-
-
-
-
-
- 
 .img-container {
     display: flex;
     justify-content: center;
@@ -455,7 +436,6 @@ video{
     color: #62381B;
     text-align: center; 
 }
-
 .div_ici_yazi{
     width: 150px;
     height: 150px;
@@ -463,7 +443,6 @@ video{
     margin-left: auto;
     margin-right: auto;
 }
-
 .button1{
     padding: 12px 20px;
     margin-top: 60px;
@@ -474,13 +453,11 @@ video{
     font-weight: 500;
     transition: ease-in-out .3s;
 }
-
 .button1:hover{
     cursor: pointer;
     background-color: #F7EBDC;
     color: #000;
 }
-
 .foto{
     width: 700px;
     height: 800px;
@@ -499,7 +476,6 @@ video{
     filter: brightness(50%);
     position: relative; 
 }
-
 .foto_img img {
     position:absolute; 
     border-radius: 0 0 150px 150px; 
@@ -514,9 +490,6 @@ video{
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
-
-
-
 .foto_ici1{
     position: relative;
     left: 50%;
@@ -538,7 +511,6 @@ video{
     padding-top: 100px;
     font-family: "Gilroy", Sans-serif;
     font-size: 16px;
-    
 }
 .foto_ici_btn {
     width: 150px;
@@ -602,8 +574,7 @@ video{
     .foto2 img {
         width: 100%; 
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;  
     }
 }
 .foto_ici_btn:hover {
@@ -653,7 +624,6 @@ video{
 @media (max-width: 986px) {
     .orta_div{
         margin-top: 200px;
-
     }
     .orta_div_ici {
         width: auto;
@@ -707,13 +677,11 @@ video{
     flex-direction: column; 
     align-items: center;
     margin-top: 50px;
-    
 }
 @media (max-width:1000px) {
     .icerik{
         flex-direction: column; 
-        align-items: center; 
-        
+        align-items: center;  
     }
     .icerik2{
         width: 250px; 
@@ -721,7 +689,6 @@ video{
         align-items: center; 
         display: flex; 
         justify-content: center; 
-        
     }
     
 }
@@ -737,15 +704,13 @@ video{
 @media (max-width: 1106px) {
     .deneme {
         flex-direction: column; 
-        align-items: center; 
-        
+        align-items: center;  
     }
     .icerik2 {
         width: 100%; 
         height: auto; 
         margin-right: 0; 
         margin-bottom: 20px; 
-        
     }
     .icerik3 {
         width: 100%; 
@@ -813,7 +778,6 @@ video{
     font-size: 50px;
     margin-top: 150px;
     margin-left: 120px;
-
 }
 .icerik1_p3 {
     font-style: italic;
@@ -875,7 +839,6 @@ video{
  #slider label {
     cursor:pointer;
     text-decoration: none;
-    
  }
  #slides {
     padding: 10px;
@@ -883,7 +846,6 @@ video{
     background: #fff;
     position: relative;
     z-index: 1;
-    
  }
  #overflow {
     width: 100%;
@@ -908,7 +870,7 @@ video{
     justify-content: center;
     align-items: center;
     color: #fff;
-    height: 350px;
+    height: 500px;
  }
  #slides .slide_1 {
     color: #000;
@@ -977,5 +939,4 @@ video{
        margin: 0 auto;
     }
  }
-
 /* slider code finish*/

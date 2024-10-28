@@ -33,7 +33,6 @@ body {
     background-position: center center;
     background-size: cover;
 }
-
 .golge {
     position: absolute;
     width: 100%;
@@ -41,7 +40,6 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .overlay-text {
     color: #fff;
     font-size: clamp(24px, 5vw, 48px);
@@ -69,7 +67,6 @@ body {
     text-align: center;
     color: #62381B;
 }
-
 .vertical-menu ul li a {
     text-decoration: none;
     color: #62381B;
@@ -118,8 +115,8 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
-    /* footer bölümü */
 }
+/* footer bölümü */
 .footer-tadal {
     width: 100%;
     height: auto;
@@ -179,11 +176,9 @@ body {
     padding: 40px 20px;
     border-radius: 8px;
 }
-
 .galeri1 img {
     opacity: 1;
     transition: ease-in-out all .3s;
-   
 }
 .galeri1:hover{
     cursor: pointer;
@@ -191,9 +186,7 @@ body {
 }
 .galeri1:hover img{
     opacity: 0.6;
-   
 }
-
 .galeri1{
     width: 300px;
     height: 300px;
@@ -205,7 +198,6 @@ body {
 }
 @media screen and (max-width: 438px) {
     .galeri {
-
         flex-direction: column;
         gap: 50px;
     }
@@ -219,9 +211,7 @@ body {
     margin-top: 100px;
     margin-bottom: 50px;
 }
-
 @media (max-width: 780px) {
-
     .galeri5,.galeri6 {
         width: 100%;
         height: auto;
@@ -263,7 +253,6 @@ body {
     position: relative;
     align-items: center;
     top: 25px;
-    
 }
 .email-icon {
     margin-right: 15px;
@@ -299,7 +288,6 @@ body {
     border-radius: 5px;
     color: #000;
 }
-
 .menu {
     display: flex;
     justify-content: center;
