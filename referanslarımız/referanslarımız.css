@@ -14,6 +14,7 @@ body {
     width: 100%;
     display: block;
     filter: blur(2px);
+    object-fit: cover;
     background-size: cover;
 }
 .contact-link{
