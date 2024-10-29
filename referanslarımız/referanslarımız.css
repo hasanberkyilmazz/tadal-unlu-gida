@@ -8,6 +8,7 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto; 
+    z-index: 999;
 }
 .image-back {
     width: 100%;
